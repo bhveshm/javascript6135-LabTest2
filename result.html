@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Warehouse Ltd.</title>
+    <style>
+      body {
+        background: rgb(178, 178, 178);
+        background: radial-gradient(
+          circle,
+          rgba(178, 178, 178, 1) 0%,
+          rgba(168, 211, 221, 1) 100%
+        );
+      }
+      h1 {
+          text-align: center;
+      }
+
+      #output {
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Result</h1>
+     <p>Shelf Number: ${row.ShelfLocation}</p>
+    <p>Bin Number: ${row.BinID}</p>
+     <p>Count: ${row['COUNT(PartNumber.PartNumberID)']}</p>
+  </body>
+</html>
